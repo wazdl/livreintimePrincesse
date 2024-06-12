@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Princesse Livre Intime</title>
+
+        <link rel="stylesheet" href="princesse.css">
+
+        <script src="https://kit.fontawesome.com/1cad54f882.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <input type="checkbox" id="checkbox-cover">
+        <input type="checkbox" id="checkbox-page1">
+        <input type="checkbox" id="checkbox-page2">
+        <div class="book">
+            <div class="cover">
+                <label for="checkbox-cover"></label>
+            </div>
+            <div class="page" id="page1">
+                <div class="front-page">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, commodi. 
+                        Dignissimos architecto dolore facilis voluptates tenetur vitae consectetur, sapiente optio dolor, delectus unde perspiciatis soluta totam repudiandae excepturi nihil veniam.</p>
+                    <label class="next" for="checkbox-page1"><i class="fas fa-chevron-right"></i></label>
+                </div>
+                <div class="back-page">
+                    <img src="1.jpg">
+                    <label class="prev"
+                    for="checkbox-page1"><i class="fas fa-chevron-left"></i></label>
+                </div>
+            </div>
+            <div class="page" id="page2">
+                <div class="front-page">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore reiciendis et molestiae, fugit porro quaerat repellat dolorem nobis commodi? Deleniti aliquid deserunt dignissimos corporis sunt molestiae minus temporibus, velit voluptas?</p>
+                    <label class="next" for="checkbox-page2"><i class="fas fa-chevron-right"></i></label>
+                </div>
+                <div class="back-page">
+                    <img src="2.jpg">
+                    <label class="prev"
+                    for="checkbox-page2"><i class="fas fa-chevron-left"></i></label>
+                </div>
+            </div>
+            <div class="page" id="page3">
+                <div class="front-page">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error nisi magnam natus ullam porro corporis quibusdam esse ratione, corrupti odit dolore illum. Neque nulla debitis ex voluptas officiis. Suscipit, mollitia.</p>
+                    <label class="next" for="checkbox-page3"><i class="fas fa-chevron-right"></i></label>
+                </div>
+                <div class="back-page">
+                    <img src="3.jpg">
+                    <label class="prev"
+                    for="checkbox-page2"><i class="fas fa-chevron-left"></i></label>
+                </div>
+            </div>
+            <div class="back-cover"></div>
+        </div>
+    </body>
+</html>
