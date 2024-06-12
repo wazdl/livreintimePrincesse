@@ -129,3 +129,20 @@ input {
 	transform: rotateY(-180deg);
 	z-index: 3;
 }
+
+@media (max-width: 480px) {
+	.book {
+		width: 220px;
+		height: 300px;
+	}
+	.page {
+		width: 200px;
+		height: 280px;
+	}
+	.cover, .back-cover {
+		border-radius: 0 10px 10px 0;
+	}
+	.page img {
+		border-radius: 10px 0 0 10px;
+	}
+}
