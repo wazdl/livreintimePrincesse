@@ -130,14 +130,18 @@ input {
 	z-index: 3;
 }
 
+.titrePage{
+    font-size: 10px;
+}
+
 @media (max-width: 480px) {
 	.book {
-		width: 220px;
-		height: 300px;
+		width: 210px;
+		height: 290px;
 	}
 	.page {
-		width: 200px;
-		height: 280px;
+		width: 190px;
+		height: 270px;
 	}
 	.cover, .back-cover {
 		border-radius: 0 10px 10px 0;
