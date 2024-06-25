@@ -16,7 +16,7 @@
                     if (!this.checked) {
                         document.getElementById('checkbox-page1').checked = false;
                         document.getElementById('checkbox-page2').checked = false;
-                        // Add additional lines here for more pages if necessary
+                        document.getElementById('checkbox-page3').checked = false;
                     }
                 });
             });
@@ -26,14 +26,17 @@
         <input type="checkbox" id="checkbox-cover">
         <input type="checkbox" id="checkbox-page1">
         <input type="checkbox" id="checkbox-page2">
+        <input type="checkbox" id="checkbox-page3">
         <div class="book">
             <div class="cover">
+                <!-- <p class="TextePageCouverture">Test</p> -->
                 <label for="checkbox-cover"></label>
             </div>
             <div class="page" id="page1">
                 <div class="front-page">
                     <p class="titrePage">Bonjour et bienvenue dans mon livre intime !</p>
-                    <p>Ce livre racontera un peux mon histoire avec ma superbe copine se nommant Léolia. Vous pourrez trouver dedans le début de notre relation jusqu'à maintenant.</p>
+                    <p class="titrePageTexte">Ce livre racontera un peu mon histoire avec ma superbe copine se nommant Léolia. Vous pourrez trouver dedans le début de notre relation jusqu'à maintenant. Nous nous sommes mis ensemble le 2 février 2024 durant mon stage.</p>
+                    <p class="Infos">"Pour naviguer dans le livre, appuyer sur les flèches droite et gauche situées dans les coins inférieurs du livre et cliquer sur la page rouge pour fermer le livre."</p>
                     <label class="next" for="checkbox-page1"><i class="fas fa-chevron-right"></i></label>
                 </div>
                 <div class="back-page">
@@ -55,13 +58,13 @@
             </div>
             <div class="page" id="page3">
                 <div class="front-page">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error nisi magnam natus ullam porro corporis quibusdam esse ratione, corrupti odit dolore illum. Neque nulla debitis ex voluptas officiis. Suscipit, mollitia.</p>
+                    <p>Mmmh</p>
                     <label class="next" for="checkbox-page3"><i class="fas fa-chevron-right"></i></label>
                 </div>
                 <div class="back-page">
                     <img src="3.jpg">
                     <label class="prev"
-                    for="checkbox-page2"><i class="fas fa-chevron-left"></i></label>
+                    for="checkbox-page3"><i class="fas fa-chevron-left"></i></label>
                 </div>
             </div>
             <div class="back-cover"></div>
