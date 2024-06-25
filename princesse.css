@@ -31,9 +31,16 @@ input {
 	transform-origin: center left;
 }
 
+/* .TextePageCouverture{
+	margin: auto;
+	width: 500%;
+	text-align: center;
+	border: 3px solid green;
+} */
+
 .cover {
 	position: absolute;
-	z-index: 4;
+	z-index: 6;
 	transition: transform 1s;
 }
 
@@ -100,9 +107,12 @@ input {
 }
 
 #page1 {
-	z-index: 3;
+	z-index: 4;
 }
 #page2 {
+	z-index: 3;
+}
+#page3 {
 	z-index: 2;
 }
 
@@ -130,11 +140,29 @@ input {
 	z-index: 3;
 }
 
+#checkbox-page3:checked ~ .book #page3 {
+	transform: rotateY(-180deg);
+	z-index: 4;
+}
+
 .titrePage{
 	color: #ae0a0a;
 	text-align: center;
 	font-weight: bold;
     font-size: 15px;
+}
+
+.titrePageTexte{
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	text-align: justify;
+    font-size: 15px;
+}
+
+.Infos{
+	color:#ae0a0a;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	text-align: justify;
+	font-size: 15px;
 }
 
 @media (max-width: 480px) {
@@ -156,4 +184,20 @@ input {
 		padding: 0.5rem; /* Réduire padding pour la version mobile */
 		font-size: 0.8rem; /* Réduire la taille de la police pour mobile */
 	}
+	.titrePageTexte{
+		font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+		text-align: justify;
+		font-size: 10px;
+	}
+	.Infos{
+		color:#ae0a0a;
+		font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+		text-align: justify;
+		font-size: 10px;
+	}
+	/* .TextePageCouverture{
+		width: 0%;
+		margin-left: 50px;
+		margin-bottom: 250px;
+	} */
 }
